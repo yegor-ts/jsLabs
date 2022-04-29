@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lab-1</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>Додати користувача!</h1>
+    <form id="form">
+      <div>
+        <label>
+          Ім'я: <br />
+          <input type="text" name="name" placeholder="Введіть ім'я" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Пошта: <br />
+          <input type="email" name="email" placeholder="Введіть пошту" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Пароль: <br />
+          <input type="password" name="password" placeholder="Введіть пароль" />
+        </label>
+      </div>
+      <br />
+      <div>
+        <label for="secretQuestion"
+          >Виберіть контрольне питання<br />
+          <select name="secretQuestion">
+            <option value="Улюблене місто?">Улюблене місто?</option>
+            <option value="Окличка домашнього вихованця?">
+              Окличка домашнього вихованця?
+            </option>
+            <option value="Улюблена мова програмування?">
+              Улюблена мова програмування?
+            </option>
+          </select>
+        </label>
+        <br />
+        <label for="secretQuestionAnswer"
+          >Відповідь:<br />
+          <input
+            type="text"
+            name="secretQuestionAnswer"
+            placeholder="Введіть відповідь"
+          />
+        </label>
+      </div>
+      <br />
+      <div>
+        <button type="submit">Створити!</button>
+      </div>
+      <br />
+    </form>
+    <hr />
+    <h1>Змінити користувача</h1>
+    <form id="resetPasswordForm">
+      <label for="resetPassword">Скинути пароль</label>
+      <br />
+      <input
+        type="password"
+        name="resetPassword"
+        placeholder="Введіть новий пароль"
+      />
+      <br />
+      <label for="changeName">Змінити ім'я</label>
+      <br />
+      <input type="text" name="changeName" placeholder="Введіть нове ім'я" />
+      <br />
+      <label for="changeEmail">Змінити пошту</label>
+      <br />
+      <input type="email" name="changeEmail" placeholder="Введіть нову пошту" />
+      <br />
+      <button type="submit">Змінити</button>
+    </form>
+    <hr />
+    <h1>Друзі</h1>
+    <form id="friendForm">
+      <label for="friendEmail">Пошта друга</label>
+      <br />
+      <input type="text" name="friendEmail" placeholder="Введіть іншу пошту" />
+      <button type="submit">Додати</button>
+      <button type="reset">Видалити</button>
+    </form>
+    <script src="./user.js" defer></script>
+  </body>
+</html>
